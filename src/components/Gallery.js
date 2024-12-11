@@ -1,12 +1,88 @@
 import React from 'react';
 
 const Gallery = () => {
-  // Placeholder images - replace with actual community images
-  const images = Array(8).fill(null).map((_, index) => ({
-    id: index + 1,
-    src: `/images/gallery/image${index + 1}.jpg`,
-    alt: `Community Image ${index + 1}`,
-  }));
+  const images = [
+    {
+      id: 1,
+      src: '/images/gallery/brian_wif.jpg',
+      alt: 'Brian WIF',
+    },
+    {
+      id: 2,
+      src: '/images/gallery/cobie.jpg',
+      alt: 'Cobie',
+    },
+    {
+      id: 3,
+      src: '/images/gallery/paulcoinbase_wif.jpg',
+      alt: 'Paul Coinbase WIF',
+    },
+    {
+      id: 4,
+      src: '/images/gallery/solanawif.jpeg',
+      alt: 'Solana WIF',
+    },
+    {
+      id: 5,
+      src: '/images/gallery/art_bessel.jpg',
+      alt: 'Art Bessel',
+    },
+    {
+      id: 6,
+      src: '/images/gallery/three_arrows_capital.jpg',
+      alt: 'Three Arrows Capital',
+    },
+    {
+      id: 7,
+      src: '/images/gallery/certified_munch.jpg',
+      alt: 'Certified Munch',
+    },
+    {
+      id: 8,
+      src: '/images/gallery/robinhood_ceo.jpg',
+      alt: 'Robinhood CEO',
+    },
+    {
+      id: 9,
+      src: '/images/gallery/bestfrens.jpg',
+      alt: 'Best Friends',
+    },
+    {
+      id: 10,
+      src: '/images/gallery/robinhood_ceo_2.jpg',
+      alt: 'Robinhood CEO 2',
+    },
+    {
+      id: 11,
+      src: '/images/gallery/bullIwif_2.jpg',
+      alt: 'Bull WIF 2',
+    },
+    {
+      id: 12,
+      src: '/images/gallery/wif_jfk.jpg',
+      alt: 'WIF JFK',
+    },
+    {
+      id: 13,
+      src: '/images/gallery/statue_girl_wif.jpg',
+      alt: 'Statue Girl WIF',
+    },
+    {
+      id: 14,
+      src: '/images/gallery/dog_wif_japan.jpg',
+      alt: 'Dog WIF Japan',
+    },
+    {
+      id: 15,
+      src: '/images/gallery/wif_space.jpg',
+      alt: 'WIF Space',
+    },
+    {
+      id: 16,
+      src: '/images/gallery/bullwifhat.png',
+      alt: 'Bull WIF Hat',
+    },
+  ];
 
   return (
     <section className="py-16 bg-background-secondary" id="gallery">

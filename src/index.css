@@ -19,3 +19,16 @@
     @apply px-6 py-2 font-semibold transition-colors border-2 rounded-lg border-primary text-primary hover:bg-primary hover:text-white;
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}

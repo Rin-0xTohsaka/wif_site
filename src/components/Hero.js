@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Left side - Logo */}
           <div className="flex justify-center md:justify-start">
             <img
-              src="/images/hero-dog.png"
+              src="/images/wif_logo.jpg"
               alt="WIF Dog"
               className="w-64 md:w-96"
             />
@@ -66,8 +66,22 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-              <button className="btn-primary">Buy WIF</button>
-              <button className="btn-secondary">Join Community</button>
+              <a
+                href="https://jup.ag/swap/SOL-$WIF_EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-center"
+              >
+                Buy WIF
+              </a>
+              <a
+                href="https://t.me/dogwifcoin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-center"
+              >
+                Join Community
+              </a>
             </div>
           </div>
         </div>

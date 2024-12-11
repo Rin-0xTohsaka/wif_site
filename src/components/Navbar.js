@@ -6,8 +6,24 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Community', href: '#community' },
-    { name: 'Gallery', href: '#gallery' },
+  ];
+
+  const socialLinks = [
+    {
+      name: 'Twitter',
+      href: 'https://twitter.com/dogwifcoin',
+      icon: '/images/icons/wif_twitter.png',
+    },
+    {
+      name: 'Telegram',
+      href: 'https://t.me/dogwifcoin',
+      icon: '/images/icons/wif_telegram.png',
+    },
+    {
+      name: 'Dexscreener',
+      href: 'https://dexscreener.com/solana/ep2ib6dydeeqd8mfe2ezhcxx3kp3k2elkkirfpm5eymx',
+      icon: '/images/icons/wif_dex.png',
+    },
   ];
 
   return (
@@ -30,7 +46,21 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <button className="btn-primary">Buy WIF</button>
+            {socialLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-110"
+              >
+                <img
+                  src={link.icon}
+                  alt={link.name}
+                  className="w-6 h-6 rounded-full"
+                />
+              </a>
+            ))}
           </div>
 
           {/* Mobile menu button */}
@@ -58,12 +88,24 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <button 
-                className="w-full btn-primary mt-4"
-                onClick={() => setIsOpen(false)}
-              >
-                Buy WIF
-              </button>
+              <div className="flex justify-center space-x-6 mt-4">
+                {socialLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-transform hover:scale-110"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <img
+                      src={link.icon}
+                      alt={link.name}
+                      className="w-6 h-6 rounded-full"
+                    />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         )}
