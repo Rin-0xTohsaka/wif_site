@@ -16,21 +16,24 @@ const Exchanges = () => {
   const scrollingExchanges = [...exchanges, ...exchanges];
 
   return (
-    <section className="py-16 overflow-hidden">
+    <section className="py-20 bg-background-secondary/30 overflow-hidden">
       <div className="container">
-        <h2 className="mb-12 text-4xl font-bold text-center">Listed On</h2>
+        <h2 className="mb-16 text-5xl font-display text-center">
+          <span className="text-blue-300">find us</span>{' '}
+          <span className="text-yellow-400">here</span>
+        </h2>
         <div className="relative">
           <div className="flex animate-scroll">
             {scrollingExchanges.map((exchange, index) => (
               <div
                 key={`${exchange.name}-${index}`}
-                className="flex items-center justify-center flex-shrink-0 p-6 mx-4 transition-transform rounded-lg bg-background-secondary hover:scale-105"
+                className="flex items-center justify-center flex-shrink-0 p-8 mx-6 transition-transform rounded-xl bg-background-secondary/80 backdrop-blur-sm hover:scale-105 shadow-lg"
                 style={{ minWidth: '200px' }}
               >
                 <img
                   src={exchange.logo}
                   alt={exchange.name}
-                  className="w-full max-w-[120px] h-auto opacity-80 hover:opacity-100 transition-opacity"
+                  className="w-full max-w-[120px] h-auto opacity-90 hover:opacity-100 transition-all"
                 />
               </div>
             ))}

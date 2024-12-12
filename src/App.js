@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import TokenInfo from './components/TokenInfo';
 import Story from './components/Story';
 import Exchanges from './components/Exchanges';
 import Gallery from './components/Gallery';
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <TokenInfo />
         <Story />
         <Exchanges />
         <Gallery />
