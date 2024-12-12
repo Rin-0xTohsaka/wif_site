@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src="/images/logo.png" alt="WIF" className="h-8" />
+            <img src="/images/wif_logo.jpg" alt="WIF" className="h-8" />
           </div>
 
           {/* Desktop Navigation */}
