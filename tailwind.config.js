@@ -15,6 +15,9 @@ module.exports = {
           secondary: '#1e293b', // slate-800
         },
       },
+      fontFamily: {
+        display: ['Fredoka', 'sans-serif'],
+      },
     },
   },
   plugins: [],
